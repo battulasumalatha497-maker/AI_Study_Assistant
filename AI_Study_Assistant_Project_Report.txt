@@ -1,0 +1,526 @@
+CERTIFICATE 
+
+This is to certify that the project entitled 
+
+“AI STUDY ASSISTANT” 
+
+is a bonafide project work carried out by 
+
+BATTULA SUMALATHA 
+
+in partial fulfillment of the requirements for the completion of 
+
+B.TECH 
+
+under the Department of 
+
+CSE 
+
+during the academic year 2026. 
+
+The work presented in this project report is carried out under the guidance and supervision of the concerned faculty. 
+
+
+Project Guide: ____RAMANI________________ 
+
+
+Head of the Department: ________SRINIVASULU______________ 
+
+
+Date: _________21/09/2026_____________ 
+
+
+Place: _______VALLURU_______________ 
+
+DECLARATION 
+
+I, BATTULA SUMALATHA, hereby declare that the project entitled 
+
+“AI STUDY ASSISTANT” 
+
+is my original work carried out as part of the academic requirements for the completion of my course. 
+
+The project has been developed using Python and Streamlit and includes features such as document upload, text extraction, document statistics, key-point generation, study quiz generation, multiple-choice quiz generation with scoring, information extraction, and question answering. 
+
+I further declare that this work has not been submitted previously for the award of any other degree or qualification. 
+
+
+Name: BATTULA SUMALATHA 
+
+Signature: _____B.SUMALATHA________________ 
+
+Date: _______21/09/2026_______________ 
+
+Place: __________VALLURU____________ 
+
+ACKNOWLEDGEMENT 
+
+I would like to express my sincere gratitude to everyone who supported me in completing the project entitled 
+
+“AI STUDY ASSISTANT”. 
+
+I am thankful to my project guide for providing valuable guidance, suggestions, and encouragement throughout the development of this project. I also express my gratitude to the Head of the Department and the faculty members for their support and encouragement. Finally, I would like to thank my family and friends for their continuous support and motivation during the completion of this project. 
+
+
+BATTULA SUMALATHA 
+
+ABSTRACT 
+
+The AI Study Assistant is a web-based application developed to help students study and understand their learning materials more efficiently. The application allows users to upload PDF, DOCX, and PPTX documents and extracts the text from the uploaded files. 
+
+The system provides several useful study features, including document viewing, word and character counting, key-point generation, study quiz generation, multiple-choice quiz generation with scoring, and question answering. It can also identify information such as email addresses, phone numbers, LinkedIn links, skills, and programming languages from the uploaded document. 
+
+The application is developed using Python and Streamlit. PDF files are processed using the PyPDF library, DOCX files are processed using the python-docx library, and PPTX files are processed using the python-pptx library. The question-answering feature uses TF-IDF vectorization and cosine similarity to identify the most relevant information from the uploaded document. 
+
+The main purpose of this project is to provide students with a simple and interactive tool for studying digital learning materials. 
+
+TABLE OF CONTENTS 
+
+1. Introduction 
+2. Problem Statement 
+3. Objectives 
+4. Existing System 
+5. Proposed System 
+6. Technologies Used 
+7. System Requirements 
+8. System Architecture 
+9. Modules 
+10. Implementation 
+11. Results and Screenshots 
+12. Advantages 
+13. Limitations 
+14. Future Enhancements 
+15. Conclusion 
+16. References 
+
+1. INTRODUCTION 
+
+Education is becoming increasingly digital, and students use many electronic documents such as PDF files, Word documents, PowerPoint presentations, notes, and study materials. Reading and searching through large documents can take considerable time. Students may also find it difficult to quickly identify important information from their study materials. 
+
+The AI Study Assistant is a web-based application designed to help students interact with their digital study materials in a simple and convenient way. The application allows users to upload PDF, DOCX, and PPTX documents and automatically extracts the text from them. 
+
+After uploading a document, the system provides useful features such as document viewing, word and character counting, key-point generation, quiz generation, and question answering. It can also identify information such as email addresses, phone numbers, LinkedIn links, skills, and programming languages. 
+
+The application is developed using Python and Streamlit. Natural language processing techniques such as TF-IDF and cosine similarity are used to find relevant information when the user asks a question. 
+
+The main goal of the AI Study Assistant is to provide students with an easy-to-use study tool that helps them access and understand information from their learning materials more efficiently. 
+
+2. PROBLEM STATEMENT 
+
+Students often use PDF, DOCX, and PPTX files as study materials. Finding important information from these documents manually can take time, especially when the document contains a large amount of text. 
+
+Traditional document viewers mainly allow users to read the content but do not provide dedicated study features such as key-point generation, quiz generation, or question answering. 
+
+Students therefore need a simple application that can read their study materials and provide useful information in an interactive manner. 
+
+The AI Study Assistant addresses this problem by allowing users to upload PDF, DOCX, and PPTX documents and providing features such as document viewing, key-point generation, quiz generation, information extraction, and question answering. 
+
+The system aims to reduce the time required to search through study materials and provide students with a convenient tool for learning from their digital documents. 
+
+3. OBJECTIVES 
+
+The main objectives of the AI Study Assistant project are: 
+
+1. To develop a simple and user-friendly web application for studying digital documents. 
+
+2. To allow users to upload PDF, DOCX, and PPTX study materials. 
+
+3. To extract readable text from uploaded documents. 
+
+4. To provide document statistics such as word count and character count. 
+
+5. To generate important key points from the uploaded study material. 
+
+6. To generate study quiz questions to help students practice and revise their learning materials. 
+
+7. To generate multiple-choice questions and calculate the user's quiz score. 
+
+8. To allow users to ask questions about the uploaded document. 
+
+9. To identify useful information such as email addresses, phone numbers, LinkedIn links, skills, and programming languages. 
+
+10. To use TF-IDF and cosine similarity to find relevant information for general questions. 
+
+11. To provide students with a convenient and interactive study assistant. 
+
+4. EXISTING SYSTEM 
+
+In the existing system, students commonly use PDF readers, word processors, presentation viewers, and other document viewing applications to study their learning materials. 
+
+These applications mainly provide basic features such as opening, reading, searching, and viewing documents. They generally do not provide an integrated set of study features such as automatic key-point generation, quiz generation, information extraction, and question answering. 
+
+When students need specific information from a large document, they may have to search through the document manually. This can take time and may make studying less convenient. 
+
+Therefore, there is a need for a simple application that combines document processing with useful study assistance features in a single interface. 
+
+5. PROPOSED SYSTEM 
+
+The proposed system is an AI Study Assistant developed as a web-based application using Python and Streamlit. The system is designed to help students interact with their digital study materials through a simple and user-friendly interface. 
+
+Users can upload PDF, DOCX, or PPTX files to the application. The system extracts the text from the uploaded document and provides several study-related features. 
+
+The proposed system provides document viewing, word count, character count, key-point generation, study quiz generation, multiple-choice quiz generation with scoring, and question answering. It can also identify information such as email addresses, phone numbers, LinkedIn links, skills, and programming languages. 
+
+For general questions, the system uses TF-IDF vectorization and cosine similarity to compare the user's question with sections of the uploaded document and identify the most relevant information. 
+
+The proposed system provides multiple study functions in one application and helps students access information from their study materials more conveniently. 
+
+6. TECHNOLOGIES USED 
+
+The following technologies and Python libraries are used to develop the AI Study Assistant. 
+
+1. Python 
+
+Python is the main programming language used to develop the application. It is used for document processing, text processing, information extraction, and question answering. 
+
+2. Streamlit 
+
+Streamlit is used to create the web-based user interface. It allows the Python application to run as an interactive web application. 
+
+3. python-docx 
+
+The python-docx library is used to read and extract text from DOCX documents. 
+
+4. PyPDF 
+
+The PyPDF library is used to read PDF documents and extract text from PDF pages. 
+
+5. python-pptx 
+
+The python-pptx library is used to read PowerPoint PPTX presentations and extract text from slide content. 
+
+6. Scikit-learn 
+
+Scikit-learn is used for TF-IDF vectorization and cosine similarity. These techniques help the application identify relevant information from the uploaded document. 
+
+7. Regular Expressions 
+
+Regular expressions are used to identify specific information such as email addresses, phone numbers, and LinkedIn links. 
+
+8. HTML and CSS 
+
+The Streamlit framework provides the web interface used by the application, allowing users to interact with the study assistant through a browser. 
+
+7. SYSTEM REQUIREMENTS 
+
+7.1 Hardware Requirements 
+
+Processor: Intel Core i3 or above 
+RAM: 4 GB or above 
+Storage: At least 500 MB free space 
+Display: Standard monitor 
+Internet Connection: Required for installing packages and running the development environment 
+
+7.2 Software Requirements 
+
+Operating System: Windows 
+Programming Language: Python 
+Development Environment: Notepad and Command Prompt 
+Web Framework: Streamlit 
+Browser: Google Chrome or any modern web browser 
+Libraries: python-docx, PyPDF, python-pptx, scikit-learn 
+
+8. SYSTEM ARCHITECTURE 
+
+The AI Study Assistant follows a simple document-processing architecture. The user interacts with the application through a web browser, while the Streamlit application processes the uploaded document and provides the requested study features. 
+
+The main flow of the system is: 
+
+User 
+   ↓ 
+Streamlit Web Interface 
+   ↓ 
+Upload PDF / DOCX / PPTX 
+   ↓ 
+Document Text Extraction 
+   ↓ 
+Text Processing 
+   ↓ 
+Study Assistant Features 
+   ↓ 
+Results Displayed to User 
+
+The major components of the architecture are: 
+
+1. User Interface 
+
+The Streamlit interface allows users to upload documents, view document information, generate key points, generate quizzes, and ask questions. 
+
+2. Document Processing 
+
+The system identifies whether the uploaded file is a PDF, DOCX, or PPTX file and extracts readable text from it. 
+
+3. Text Processing 
+
+The extracted text is divided into meaningful lines and processed for searching and information extraction. 
+
+4. Information Extraction 
+
+Regular expressions and keyword-based processing are used to identify emails, phone numbers, LinkedIn links, skills, and programming languages. 
+
+5. Question Answering 
+
+For general questions, TF-IDF vectorization and cosine similarity are used to compare the question with document content and identify the most relevant section. 
+
+6. Result Display 
+
+The processed results are displayed to the user through the Streamlit web interface. 
+
+9. MODULES 
+
+The AI Study Assistant is divided into several modules. Each module performs a specific function in the application. 
+
+9.1 Document Upload Module 
+
+This module allows the user to upload PDF, DOCX, and PPTX study materials through the Streamlit interface. 
+
+9.2 Document Processing Module 
+
+This module extracts readable text from uploaded PDF, DOCX, and PPTX files using the PyPDF, python-docx, and python-pptx libraries. 
+
+9.3 Document Statistics Module 
+
+This module calculates and displays the number of words and characters in the uploaded document. 
+
+9.4 Document Viewer Module 
+
+This module allows the user to view the extracted content of the uploaded document. 
+
+9.5 Key-Point Generation Module 
+
+This module identifies and displays important lines from the uploaded study material as key points. 
+
+9.6 Quiz Module 
+
+This module selects useful lines from the uploaded document and generates study quiz questions with expandable answers. 
+
+9.7 Multiple-Choice Quiz Module 
+
+This module selects useful lines from the uploaded document, generates multiple-choice questions with answer options, accepts the user's selections, and calculates the final score. 
+
+9.8 Information Extraction Module 
+
+This module identifies information such as email addresses, phone numbers, LinkedIn links, skills, and programming languages. 
+
+9.9 Question Answering Module 
+
+This module accepts questions from the user and searches the uploaded document for relevant information. 
+
+9.10 TF-IDF Search Module 
+
+This module uses TF-IDF vectorization and cosine similarity to compare the user's question with document content and identify the most relevant text. 
+
+9.11 User Interface Module 
+
+The Streamlit interface displays the uploaded document, study tools, questions, answers, and results in an interactive format. 
+
+10. IMPLEMENTATION 
+
+The AI Study Assistant is implemented using Python and Streamlit. The application is designed to provide an interactive interface for uploading and studying digital documents. 
+
+10.1 Application Setup 
+
+The project is created using Python in a Windows environment. A Python virtual environment is used to install and manage the required libraries. 
+
+10.2 Document Upload 
+
+The Streamlit file uploader allows users to select PDF, DOCX, or PPTX files. After the file is uploaded, the application checks the file type and processes it accordingly. 
+
+10.3 Text Extraction 
+
+For DOCX files, the python-docx library is used to read paragraphs and extract their text. 
+
+For PDF files, the PyPDF library is used to read each page and extract available text. 
+
+For PPTX files, the python-pptx library is used to read slides and extract available text from slide content. 
+
+10.4 Document Statistics 
+
+After extracting the text, the application calculates the total number of words and characters and displays these values to the user. 
+
+10.5 Key-Point Generation 
+
+The extracted document text is divided into individual lines. The application selects available content lines and displays them as key points for quick revision. 
+
+10.6 Quiz Generation 
+
+The application selects useful lines from the uploaded document and creates quiz questions. The original document lines are provided as answers that can be viewed by the user. 
+
+10.7 Information Extraction 
+
+Regular expressions and keyword matching are used to identify emails, phone numbers, LinkedIn links, skills, and programming languages from the uploaded document. 
+
+10.8 Question Answering 
+
+When the user enters a general question, the application divides the document into text sections. TF-IDF vectorization is then applied to the sections and the user's question. 
+
+10.9 Similarity Calculation 
+
+Cosine similarity is used to calculate how closely the question matches each document section. The section with the highest similarity is selected as the answer when a relevant match is found. 
+
+10.10 Multiple-Choice Quiz 
+
+The application selects useful lines from the uploaded document and creates multiple-choice questions. Each question provides answer options, and the user selects an answer using radio buttons. After submission, the application compares the selected answers with the correct answers and calculates the final score. 
+
+10.11 Result Display 
+
+The final results are displayed through the Streamlit interface. The user can view document information, key points, study quiz questions, multiple-choice quiz questions and score, extracted information, and answers directly in the browser. 
+
+11. RESULTS AND SCREENSHOTS 
+
+The AI Study Assistant was successfully developed and tested using PDF, DOCX, and PPTX study materials. 
+
+The application successfully provides document upload, text extraction, document statistics, document viewing, key-point generation, study quiz generation, multiple-choice quiz generation with scoring, information extraction, and question answering features. 
+
+The following screenshots demonstrate the working of the application. 
+
+Figure 1: AI Study Assistant Main Page 
+Screenshot: 01_Main_Page.png 
+
+Figure 2: Uploaded Document Statistics 
+Screenshot: 02_Document_Statistics.png 
+
+Figure 3: Document Content 
+Screenshot: 03_Document_Content.png 
+
+Figure 4: Generated Key Points 
+Screenshot: 04_Key_Points.png 
+
+Figure 5: Study Quiz 
+Screenshot: 05_Study_Quiz.png 
+
+Figure 6: Skills Answer 
+Screenshot: 06_Skills_Answer.png 
+
+Figure 7: Programming Languages Answer 
+Screenshot: 07_Languages_Answer.png 
+
+Figure 8: General Question and Answer 
+Screenshot: 08_General_Question_Answer.png 
+
+Figure 9: Multiple-Choice Quiz Result 
+Screenshot: 09_MCQ_Quiz_Result.png 
+
+The screenshots show that the application functions successfully and provides an interactive environment for working with uploaded study materials. The ninth screenshot demonstrates the multiple-choice quiz result and score calculation. PPTX upload and processing were also tested successfully. 
+
+12. ADVANTAGES AND LIMITATIONS 
+
+12.1 Advantages 
+
+1. The application provides a simple and user-friendly interface. 
+
+2. Users can upload PDF, DOCX, and PPTX study materials. 
+
+3. The application extracts text automatically from uploaded documents. 
+
+4. It provides word and character counts for the uploaded document. 
+
+5. Key points can be generated for quick revision. 
+
+6. Study quiz questions and multiple-choice questions can be generated from the uploaded content. 
+
+7. Users can ask questions about the uploaded document. 
+
+8. The application can identify emails, phone numbers, LinkedIn links, skills, and programming languages. 
+
+9. TF-IDF and cosine similarity help identify relevant information for general questions. 
+
+10. The application runs through a web browser using Streamlit. 
+
+12.2 Limitations 
+
+1. The question-answering system mainly identifies the most relevant text from the uploaded document rather than generating a fully developed answer. 
+
+2. The quality of the results depends on the quality and structure of the uploaded document. 
+
+3. Scanned PDFs without readable text may not be processed correctly. 
+
+4. Quiz questions are generated from document content, so the quality of questions depends on the available text. 
+
+5. The application does not currently provide advanced conversational AI capabilities. 
+
+6. The system does not permanently store uploaded study materials. 
+
+13. FUTURE ENHANCEMENTS 
+
+The AI Study Assistant can be further improved with additional features in the future. 
+
+1. Advanced AI Question Answering 
+
+The system can be enhanced with a generative AI model to provide more detailed and natural answers to user questions. 
+
+2. Advanced Quiz Generation 
+
+The quiz module can be further enhanced with more varied question types, such as true-or-false questions, fill-in-the-blank questions, and improved question generation. 
+
+3. Better Document Summarization 
+
+A more advanced summarization technique can be added to generate concise summaries of large documents. 
+
+4. Flashcard Generation 
+
+The system can be extended to automatically create flashcards from important concepts in the uploaded study material. 
+
+5. Support for More File Formats 
+
+Additional file formats such as TXT and other educational document formats can be supported. 
+
+6. Improved User Interface 
+
+The interface can be enhanced with additional navigation options, themes, and improved visual design. 
+
+7. Study Progress Tracking 
+
+Future versions can provide features to track quiz scores and monitor the user's study progress. 
+
+8. Voice-Based Interaction 
+
+Voice input and output can be added to allow users to interact with the study assistant using speech. 
+
+9. Personalized Learning 
+
+The system can be extended to provide personalized study recommendations based on the user's learning activity. 
+
+10. Cloud Deployment 
+
+The application can be deployed online so that students can access it from different devices. 
+
+14. CONCLUSION 
+
+The AI Study Assistant is a web-based application developed to help students work with digital study materials in a simple and interactive way. 
+
+The application successfully supports PDF, DOCX, and PPTX document uploads and extracts readable text from the uploaded files. It provides useful features such as document viewing, word and character counting, key-point generation, quiz generation, information extraction, and question answering. 
+
+The use of TF-IDF vectorization and cosine similarity allows the system to identify relevant information from the uploaded document when the user asks a general question. 
+
+The project demonstrates how Python, Streamlit, document-processing libraries, regular expressions, and basic natural language processing techniques can be combined to develop a practical educational application. 
+
+Overall, the project provides a useful foundation for a digital study assistant and can be further enhanced with advanced AI, improved quiz generation, better summarization, flashcards, personalized learning, and other features. 
+
+15. REFERENCES 
+
+1. Python Documentation 
+   Python Software Foundation 
+   Official Python documentation and programming references. 
+
+2. Streamlit Documentation 
+   Streamlit 
+   Documentation for developing interactive Python web applications. 
+
+3. python-docx Documentation 
+   Documentation for reading and processing Microsoft Word DOCX files using Python. 
+
+4. PyPDF Documentation 
+   Documentation for reading and extracting text from PDF documents using Python. 
+
+5. python-pptx Documentation 
+   Documentation for reading and processing Microsoft PowerPoint PPTX presentations using Python. 
+
+6. Scikit-learn Documentation 
+   Documentation for machine learning tools including TF-IDF vectorization and cosine similarity. 
+
+7. Natural Language Processing References 
+   General references related to text processing, TF-IDF, and cosine similarity. 
+
+8. Regular Expression References 
+   General references for pattern matching and information extraction using regular expressions.
